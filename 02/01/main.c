@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// ROCK: 			A | X | 0
-// PAPER: 		B | Y | 1
-// SCISSORS: 	C | Z | 2
+// ROCK:     A | X | 0
+// PAPER:    B | Y | 1
+// SCISSORS: C | Z | 2
 
 //  |A|B|C
 // X|3|0|6
@@ -61,7 +61,7 @@ int get_next_score(FILE* f) {
 	if (line[0] == 0) {
 		return 0;
 	}
-	
+
 	int against = get_id(line[0]);
 	int played = get_id(line[2]);
 	int score = determine_score(played, against);

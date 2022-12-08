@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// ROCK: 			A | 0
-// PAPER: 		B | 1
-// SCISSORS: 	C | 2
+// ROCK:     A | 0
+// PAPER:    B | 1
+// SCISSORS: C | 2
 
 // LOSE: 	X | 0
 // DRAW: 	Y | 1
-// WIN: 	Z | 2
+// WIN:   Z | 2
 
 // x-axis: Played
 // y-axis: Against
@@ -85,7 +85,7 @@ int get_next_score(FILE* f) {
 	if (line[0] == 0) {
 		return 0;
 	}
-	
+
 	int against = get_id(line[0]);
 	int result = get_id(line[2]);
 	int played = should_play[result][against];
